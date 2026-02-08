@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alireza Nasirian | Home</title>
+    <title>Alireza Nasirianfar | Home</title>
     <meta
       name="description"
-      content="Personal homepage for Alireza Nasirian with profile, interests, and contact links."
+      content="Alireza Nasirianfar — M.Sc. Computer Science at Université de Montréal. Research in software engineering and supply chain security."
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,11 +18,12 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="#" class="logo">alireza nasirian</a>
+      <a href="#" class="logo">alireza nasirianfar</a>
       <nav class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#interests">Interests</a>
+        <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
       </nav>
       <button type="button" class="theme-toggle" aria-label="Toggle dark/light mode">
@@ -33,29 +34,40 @@
 
     <main>
       <section class="hero" id="home">
-        <img src="profile.jpg" alt="Alireza Nasirian" class="profile-photo" width="200" height="200" />
+        <img src="profile.jpg" alt="Alireza Nasirianfar" class="profile-photo" width="200" height="200" />
         <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">Alireza Nasirian</h1>
+        <h1 class="hero-name">Alireza Nasirianfar</h1>
         <p class="hero-bio">
-          I build thoughtful digital experiences and enjoy learning new things every day.
+          I'm an M.Sc. student in Computer Science at Université de Montréal, working on software supply chain security.
         </p>
       </section>
 
       <section class="section about-section" id="about">
         <h2 class="section-title">About</h2>
         <p class="section-text">
-          Welcome to my corner of the web. This page is a quick snapshot of who I am,
-          what I work on, and where you can find me online.
+          I am a Research Assistant at Université de Montréal under Prof. Benoit Baudry, focusing on large-scale analysis of GitHub Actions workflows and software supply chain security. I hold a B.Sc. in Computer Engineering from Amirkabir University of Technology (Tehran Polytechnic) and have industry experience as a Software Engineer at Tosan.
         </p>
       </section>
 
       <section class="section interests-section" id="interests">
         <h2 class="section-title">My Interests...</h2>
-        <h3 class="subsection">Fields</h3>
+        <h3 class="subsection">Research</h3>
         <div class="tag-list">
-          <span class="tag">Web development</span>
-          <span class="tag">UI &amp; UX</span>
-          <span class="tag">Continuous learning</span>
+          <span class="tag">Software Engineering</span>
+          <span class="tag">Software Architecture</span>
+          <span class="tag">Software Supply Chain</span>
+          <span class="tag">Artificial Intelligence</span>
+        </div>
+      </section>
+
+      <section class="section cv-section" id="cv">
+        <h2 class="section-title">CV</h2>
+        <p class="section-text">
+          You can view or download my full curriculum vitae below.
+        </p>
+        <div class="cv-actions">
+          <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="cv-link cv-link-view">View CV</a>
+          <a href="cv.pdf" download class="cv-link cv-link-download">Download CV</a>
         </div>
       </section>
 
@@ -64,9 +76,12 @@
         <p class="section-text contact-intro">
           Feel free to contact me via any of the platforms listed below.
         </p>
+        <div class="contact-details">
+          <p class="contact-line"><a href="mailto:alireza.nasirian2001@gmail.com">alireza.nasirian2001@gmail.com</a></p>
+        </div>
         <div class="contact-icons">
-          <a href="mailto:your@email.com" aria-label="Email" class="icon-link">✉</a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="icon-link">in</a>
+          <a href="mailto:alireza.nasirian2001@gmail.com" aria-label="Email" class="icon-link">✉</a>
+          <a href="https://www.linkedin.com/in/alireza-nasirian/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="icon-link">in</a>
           <a href="https://github.com/alireza-nasirian" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="icon-link">
             <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           </a>
@@ -75,7 +90,7 @@
     </main>
 
     <footer>
-      <p>© <span id="year"></span> Alireza Nasirian</p>
+      <p>© <span id="year"></span> Alireza Nasirianfar</p>
     </footer>
 
     <script>

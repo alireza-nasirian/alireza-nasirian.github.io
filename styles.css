@@ -208,9 +208,64 @@ main {
   color: var(--accent);
 }
 
+/* CV section */
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.cv-link {
+  display: inline-block;
+  padding: 0.65rem 1.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: transparent;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.cv-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-muted);
+}
+
+.cv-link-download {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cv-link-download:hover {
+  background: var(--accent-muted);
+}
+
 /* Contact */
 .contact-intro {
+  margin-bottom: 0.75rem;
+}
+
+.contact-details {
   margin-bottom: 1.25rem;
+}
+
+.contact-line {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.contact-line a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
 }
 
 .contact-icons {
