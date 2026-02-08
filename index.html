@@ -100,8 +100,11 @@
         const toggle = document.querySelector('.theme-toggle');
         const html = document.documentElement;
         const stored = localStorage.getItem('theme');
+        // Dark mode is default; only apply light if the user previously chose it
         if (stored === 'light') {
           html.classList.add('light');
+        } else {
+          if (stored === null) localStorage.setItem('theme', 'dark');
         }
 
         toggle.addEventListener('click', function () {
