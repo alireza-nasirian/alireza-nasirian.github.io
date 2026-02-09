@@ -28,6 +28,10 @@ body {
   font-family: "DM Sans", system-ui, -apple-system, sans-serif;
   color: var(--text);
   background: var(--bg);
+    background:
+            radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0),
+            var(--bg);
+    background-size: 24px 24px;
   line-height: 1.6;
 }
 
@@ -132,6 +136,13 @@ main {
   display: block;
   margin: 0 auto 1.5rem;
   border: 2px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.profile-photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 6px var(--accent-muted);
 }
 
 .hero-greeting {
@@ -161,6 +172,12 @@ main {
 /* Sections */
 .section {
   margin-bottom: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.section:first-of-type {
+    border-top: none;
 }
 
 .section-title {
@@ -201,11 +218,15 @@ main {
   border: 1px solid var(--border);
   border-radius: 999px;
   background: transparent;
+    transition: transform 0.2s ease, background 0.2s ease;
+
 }
 
 .tag:hover {
   border-color: var(--accent-muted);
   color: var(--accent);
+    transform: translateY(-1px);
+    background: var(--bg-soft);
 }
 
 /* CV section */
@@ -236,12 +257,15 @@ main {
 }
 
 .cv-link-download {
-  border-color: var(--accent);
-  color: var(--accent);
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
 }
 
 .cv-link-download:hover {
   background: var(--accent-muted);
+    background: transparent;
+    color: var(--accent);
 }
 
 /* Contact */
@@ -287,6 +311,8 @@ main {
   font-size: 1.1rem;
   font-weight: 600;
   transition: color 0.2s, border-color 0.2s, background 0.2s;
+    font-family: "DM Sans", system-ui;
+    letter-spacing: -0.02em;
 }
 
 .icon-link:hover {
@@ -306,6 +332,8 @@ footer {
   padding: 2rem 1rem;
   color: var(--text-muted);
   font-size: 0.875rem;
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
 }
 
 footer p {
@@ -324,9 +352,25 @@ footer p {
     width: 100%;
     justify-content: center;
     gap: 1.25rem;
+      position: relative;
   }
 
-  .hero {
+    .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 2px;
+        background: var(--accent);
+        transition: width 0.2s ease;
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    .hero {
     padding: 2rem 0 3rem;
   }
 
