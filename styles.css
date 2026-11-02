@@ -486,3 +486,8 @@ footer p {
 .tl-row:hover::before {
     transform: scaleX(1);
 }
+
+.about-section .section-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
